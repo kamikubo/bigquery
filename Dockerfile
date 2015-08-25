@@ -8,7 +8,7 @@ FROM ubuntu:12.04
 
 # environment
 ENV DEBIAN+AF8-FRONTEND noninteractive
-RUN echo +ACI-deb http://archive.ubuntu.com/ubuntu precise main universe+ACI- +AD4- /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" +AD4- /etc/apt/sources.list
 
 # update, curl, sudo
 RUN apt-get update +ACYAJg- apt-get -y upgrade
